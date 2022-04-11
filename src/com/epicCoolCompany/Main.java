@@ -6,5 +6,6 @@ public class Main {
 	// write your code here
         System.out.println("Do github work?");
         System.out.println("Line2");
+        System.out.println("Line3");
     }
 }
