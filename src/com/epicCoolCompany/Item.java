@@ -6,9 +6,11 @@ public class Item {
     private int quantity = 0;
     private String itemSeller = "";
     private String itemDescription = "";
+    private boolean inCart = false;
+    private int numberInCart = 0;
 
     //No Arg Constructor
-    public Item(String s, int i, double i1, String s1, String s2) {
+    public Item(String s, int i, double d, String s1, String s2) {
     }
     //Get Item Name
     public String getItemName() {

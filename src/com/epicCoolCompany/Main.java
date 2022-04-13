@@ -33,7 +33,9 @@ public class Main {
                 break;
             default: System.out.println("Try again, you suck");
         }
-            //Have the cases go to methods that do the thing then come back to the main bit somehow?
 
+        static void buyItem() {
+            // code to be executed
+        }
     }
 }
