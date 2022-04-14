@@ -6,13 +6,20 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+
+
     int userChoice = 0;
 
+        String[] cart = {""};
         String[] inventory = {"Bees", "Beans", "Laptop", "Anchovy", "Child", "Umbrella"};
-        Item Bees = new Item("Bees", 5, 20, "The Bee Man", "Don't Get Stung" );
+        //Inventory
+        item item1 = new item("Bees", 20.00, 20, "The Bee Man", "Don't Get Stung", false, 0 );
+        item item2 = new item("Beans", 25.50, 20, "Bush", "Tasty", false, 0 );
 
+        System.out.println(" 1 | " + item1.getItemName() + " | $" + item1.getItemPrice() + " | " + item1.getItemQuantity()  );
+        System.out.println(" 2 | " + item2.getItemName() + " | $" + item2.getItemPrice() + " | " + item2.getItemQuantity()  );
         //Main Bit
-        System.out.println("1 | Buy \n 2 | Sell \n 3 | Add Item \n 4 | Remove Item \n 5 | Checkout"); //0 For reciept
+        System.out.println(" 1 | Buy \n 2 | Sell \n 3 | Add Item \n 4 | Remove Item \n 5 | Checkout"); //0 For reciept
         Scanner input = new Scanner(System.in);
         System.out.println("Choose an Option");
         userChoice = input.nextInt();
@@ -34,8 +41,8 @@ public class Main {
             default: System.out.println("Try again, you suck");
         }
 
-        static void buyItem() {
-            // code to be executed
-        }
+
+
+
     }
 }

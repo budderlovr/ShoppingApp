@@ -1,21 +1,37 @@
 package com.epicCoolCompany;
 
-public class Item {
-    private String itemName = "";
-    private double itemPrice = 0.00;
-    private int quantity = 0;
-    private String itemSeller = "";
-    private String itemDescription = "";
-    private boolean inCart = false;
-    private int numberInCart = 0;
+public class item {
 
-    //No Arg Constructor
-    public Item(String s, int i, double d, String s1, String s2) {
-    }
+     public String itemName = "";
+     public double itemPrice = 0.00;
+     public int quantity = 0;
+     public String itemSeller = "";
+     public String itemDescription = "";
+     public boolean inCart = false;
+     public int numberInCart = 0;
+
+
+
     //Get Item Name
     public String getItemName() {
         return itemName;
     }
+    //Constructor With Specifics
+    public item(String itemName, double itemPrice, int quantity, String itemSeller, String itemDescription) {
+        this.itemName = itemName;
+        this.itemPrice = itemPrice;
+        this.quantity = quantity;
+        this.itemSeller = itemSeller;
+        this.itemDescription = itemDescription;
+    }
+    public item(String name, double price, int quant, String seller, String descript, boolean cart, int have) {
+        this.itemName = name;
+        this.itemPrice = price;
+        this.quantity = quant;
+        this.itemSeller = seller;
+        this.itemDescription = descript;
+    }
+
     //Set item name
     public void setItemName(String itemName) {
         this.itemName = itemName;
