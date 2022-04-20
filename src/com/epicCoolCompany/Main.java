@@ -7,12 +7,8 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-
-
+        int userInputChoice = 0;
         int userChoice = 0;
-
-        String[] cart = {""};
-
 
         //Inventory
         //item item1 = new item("Bees", 20.00, 20, "The Bee Man", "Don't Get Stung", false, 0 );
@@ -30,7 +26,7 @@ public class Main {
             System.out.println(" " + (i+1) + " | " + (inventory.get(i)).getItemName() + " | $" + (inventory.get(i)).getItemPrice() +
                     " | " + (inventory.get(i)).getItemQuantity() + " | " + (inventory.get(i)).getNumberInCart());
         }
-
+        if(userInputChoice<5) {
             //Option Selector
             System.out.print(" \n 1 | Buy \n 2 | Sell \n 3 | Add Item \n 4 | Remove Item \n 5 | Checkout"); //0 For reciept
             Scanner input = new Scanner(System.in);
@@ -38,11 +34,13 @@ public class Main {
             userChoice = input.nextInt();
 
             //Choosing What To Do
-        while(userChoice<5)
-            switch (userChoice) {
+            switch (userInputChoice) {
                 case 1:
                     System.out.println("Buy Which Item? (number): ");
-                    userChoice = input.nextInt();
+                    userChoice = (input.nextInt() - 1);
+                    (inventory.get(userChoice)).buyItem();
+                    System.out.println("One " + (inventory.get(userChoice)).getItemName() + " added to cart");
+                    break;
                 case 2:
                     System.out.println("You Want to Sell? You Get $0");                     //Sell
                     break;
@@ -58,6 +56,10 @@ public class Main {
                 default:
                     System.out.println("Try again, you suck");
             }
+        }
+         else
+             System.out.println("Checkout Time");
+
 
 
         }

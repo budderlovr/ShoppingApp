@@ -80,7 +80,7 @@ public class item {
         return numberInCart;
     }
     //Buy Item
-    public void buyItem(int quantity, int numberInCart) {
+    public void buyItem() {
         this.setItemQuantity(this.quantity - 1);
         this.setNumberInCart(this.numberInCart + 1);
     }
