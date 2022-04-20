@@ -93,5 +93,7 @@ public class item {
             this.setNumberInCart(this.numberInCart - 1);
 
     }
+    //Add inventory
+
 
 }
