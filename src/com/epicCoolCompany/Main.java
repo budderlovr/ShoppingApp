@@ -133,7 +133,7 @@ public class Main {
             inventory.add(new item("Bees", 20.00, 20, "The Bee Man", "Don't Get Stung", false, 0));
             inventory.add(new item("Beans", 25.50, 20, "Bush", "Tasty", false, 0));
             inventory.add(new item("Laptop", 1399.99, 39, "ASUS", "It Computes", false, 0));
-            inventory.add(new item("Cobblestone", 2.95, 64, "Mojang", "It Computes", false, 0));
+            inventory.add(new item("Cobblestone", 2.95, 64, "Mojang", "It's stone alright", false, 0));
         }
         printMenu();
 

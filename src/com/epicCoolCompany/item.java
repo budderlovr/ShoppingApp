@@ -10,12 +10,6 @@ public class item {
      public boolean inCart = false;
      public int numberInCart = 0;
 
-
-
-    //Get Item Name
-    public String getItemName() {
-        return itemName;
-    }
     //Constructor With Specifics
     public item(String itemName, double itemPrice, int quantity, String itemSeller, String itemDescription) {
         this.itemName = itemName;
@@ -35,6 +29,10 @@ public class item {
         this.inCart = isInCart;
     }
 
+    //Get Item Name
+    public String getItemName() {
+        return itemName;
+    }
     //Set item name
     public void setItemName(String itemName) {
         this.itemName = itemName;
