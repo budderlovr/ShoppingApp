@@ -52,7 +52,7 @@ public class item {
         return quantity;
     }
     //Set Quantity
-    public void setItemQuantity(int itemQuantity) {
+    public void setItemQuantity(int quantity) {
         this.quantity = quantity;
     }
     //Get Item Seller
@@ -79,21 +79,6 @@ public class item {
     public int getNumberInCart() {
         return numberInCart;
     }
-    //Buy Item
-    public void buyItem() {
-        this.setItemQuantity(this.quantity - 1);
-        this.setNumberInCart(this.numberInCart + 1);
-    }
-    //Remove from Cart
-    public void sellItem(int quantity, int numberInCart) {
-        if (this.numberInCart == 0)
-            System.out.println("You Cannot Remove an Item You Don't Have");
-        else
-            this.setItemQuantity(this.quantity + 1);
-            this.setNumberInCart(this.numberInCart - 1);
-
-    }
-    //Add inventory
 
 
 }
